@@ -4,3 +4,55 @@
 @import "variables";
 @import "mixins";
 @import "base";
+
+#wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  background-color: #efefef;
+}
+
+h1, h2, h3 {
+  font-family: $font-primary;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+  font-family: $font-secondary;
+}
+
+.title {
+  text-align: center;
+}
+
+header, section, footer,
+aside, nav, article, figure {
+  display: block;
+}
+
+.content {
+  margin-left:200px;
+  margin-right:200px;
+}
+
+section {
+  padding: 100px;
+  min-height: 100%;
+}
+
+section#intro {
+  background-color: #C28566;
+}
+
+section#products {
+  background-color: #CCB280;
+}
