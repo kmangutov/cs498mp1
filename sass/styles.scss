@@ -17,12 +17,20 @@
 #call-to-action {
 
   background-color: $color-action;
+
   width: auto;
   height: auto;
+
   display: inline-block;
   padding: 10px 10px;
+
   border-style: solid;
   border-width: 1px;
+}
+
+#call-to-action:hover {
+
+  cursor: pointer;
 }
 
 #call-to-action h2 {
@@ -30,9 +38,27 @@
   color: $color-white;
 }
 
+
+#call-to-action h2:hover {
+
+  color: $color-white;
+  text-decoration: underline;
+}
+
 .inline {
 
-  display: inline-block;
+  display: inline;
+}
+
+.inline li {
+
+  display: inline;
+  padding: 20px;
+}
+
+.inline li:hover {
+  
+  text-decoration: underline;
 }
 
 article {
@@ -92,10 +118,6 @@ aside, nav, article, figure {
   width: 100%;
 }
 
-.right {
-  //float: right;
-}
-
 section#home {
 
   background: url('../images/forest_bw.jpg') no-repeat center center fixed;
@@ -109,6 +131,10 @@ div#home {
 }
 
 section#products {
-  background-color: lighten($color-secondary, 30);
+  //background-color: lighten($color-secondary, 30);
   min-height: 90vh;
+}
+
+section#social {
+  padding: 50px;
 }
