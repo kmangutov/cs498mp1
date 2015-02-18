@@ -6,6 +6,7 @@
 @import "base";
 @import "headings";
 @import "navbar";
+@import "products";
 
 #wrapper {
   margin-right: auto;
@@ -57,7 +58,7 @@
 }
 
 .inline li:hover {
-  
+
   text-decoration: underline;
 }
 
@@ -82,7 +83,22 @@ article {
   @include img-circular(200px);
 }
 
+.circular-half {
+  @include img-circular(125px);
+}
+
 article.half {
+
+  float: left;
+ 
+  left: 0 px;
+  width: 50%;
+  height: 100%;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+div.half {
 
   float: left;
  
@@ -95,6 +111,7 @@ article.half {
 
 .padded {
   padding: 50px 200px;
+  text-align: left;
 }
 
 #hero {
@@ -105,6 +122,7 @@ article.half {
 
 .title {
   text-align: center;
+  padding: 25px 0px;
 }
 
 header, section, footer,
@@ -133,6 +151,7 @@ div#home {
 section#products {
   //background-color: lighten($color-secondary, 30);
   min-height: 90vh;
+  text-align: left;
 }
 
 section#social {
