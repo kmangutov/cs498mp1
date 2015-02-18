@@ -4,6 +4,8 @@
 @import "variables";
 @import "mixins";
 @import "base";
+@import "headings";
+@import "navbar";
 
 #wrapper {
   margin-right: auto;
@@ -12,22 +14,67 @@
   background-color: #efefef;
 }
 
-h1, h2, h3 {
-  font-family: $font-primary;
-  font-weight: 300;
+#call-to-action {
+
+  background-color: $color-action;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  padding: 10px 10px;
+  border-style: solid;
+  border-width: 1px;
 }
 
-h1 {
-  font-size: 4em;
+#call-to-action h2 {
+
+  color: $color-white;
 }
 
-h2 {
-  font-size: 3em;
+.inline {
+
+  display: inline-block;
 }
 
-h3 {
-  font-size: 2em;
-  font-family: $font-secondary;
+article {
+
+  padding: 20px 20px;
+}
+
+@mixin img-circular($radius) {
+  width: $radius * 2;
+  height: $radius * 2;
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.circular {
+
+  @include img-circular(200px);
+}
+
+article.half {
+
+  float: left;
+ 
+  left: 0 px;
+  width: 50%;
+  height: 100%;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.padded {
+  padding: 50px 200px;
+}
+
+#hero {
+  width: 200px;
+  height: 200px;
+  padding: 50px;
 }
 
 .title {
@@ -40,19 +87,28 @@ aside, nav, article, figure {
 }
 
 .content {
-  margin-left:200px;
-  margin-right:200px;
+  text-align: center;
+  align: center;
+  width: 100%;
 }
 
-section {
-  padding: 100px;
-  min-height: 100%;
+.right {
+  //float: right;
 }
 
-section#intro {
-  background-color: #C28566;
+section#home {
+
+  background: url('../images/forest_bw.jpg') no-repeat center center fixed;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  min-height: 100vh;
+}
+
+div#home {
+  min-height: 80vh;
 }
 
 section#products {
-  background-color: #CCB280;
+  background-color: lighten($color-secondary, 30);
+  min-height: 90vh;
 }

@@ -1,0 +1,1 @@
+$(window).on("scroll",function(){var a=$(window).scrollTop();a>10?$(".nav").addClass("past-main"):$(".nav").removeClass("past-main")});

@@ -1,0 +1,22 @@
+
+h1, h2, h3 {
+  font-family: $font-primary;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+  font-family: $font-secondary;
+}
+
+.font-secondary {
+  font-family: $font-secondary;
+}

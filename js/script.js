@@ -1,16 +1,9 @@
-var divs = document.getElementsByTagName('div');
-for(var i=0; i<divs.length; i++) {
-  divs[i].addEventListener("click", highlightThis);
-  /*
-  divs[i].addEventListener("click", highlightThis, true);
-  divs[i].addEventListener("click", highlightThis, false);*/
-}
+$(window).on('scroll', function() {
 
-function highlightThis(event) {
-    //event.stopPropagation();
-  
-    var backgroundColor = this.style.backgroundColor;
-    this.style.backgroundColor='yellow';
-    alert(this.className);
-    this.style.backgroundColor=backgroundColor;
-}
+  var scroll = $(window).scrollTop();
+
+  if(scroll > 10)
+    $('.nav').addClass("past-main");
+  else
+    $('.nav').removeClass("past-main");
+});
