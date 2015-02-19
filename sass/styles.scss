@@ -59,11 +59,12 @@
 
 .inline li:hover {
 
-  text-decoration: underline;
+  cursor: pointer;
 }
 
 article {
 
+  overflow: hidden;
   padding: 20px 20px;
 }
 
@@ -107,6 +108,16 @@ div.half {
   height: 100%;
   margin: 0px 0px;
   padding: 0px 0px;
+}
+
+div.small-half {
+  @extend div.half;
+  width: 25%;
+}
+
+div.large-half {
+  @extend div.half;
+  width: 75%;
 }
 
 .padded {

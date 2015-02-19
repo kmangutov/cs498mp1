@@ -1,1 +1,1 @@
-$(window).on("scroll",function(){var a=$(window).scrollTop();a>10?$(".nav").addClass("past-main"):$(".nav").removeClass("past-main")});
+var y_home=$("#home").offset().top,y_products=$("#products").offset().top;$(window).on("scroll",function(){var a=$(window).scrollTop();a>10?$(".nav").addClass("past-main"):$(".nav").removeClass("past-main")}),$("a[href*=#]").on("click",function(a){a.preventDefault(),$("html,body").animate({scrollTop:$(this.hash).offset().top},500)});

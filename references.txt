@@ -5,3 +5,5 @@ http://stackoverflow.com/questions/2743989/how-to-vertically-align-divs
 http://stackoverflow.com/questions/14038155/how-to-implement-carousel-effect-using-jquery-javascript
 
 http://bavotasan.com/2011/circular-images-with-css3/
+
+http://stackoverflow.com/questions/7717527/jquery-smooth-scrolling-when-clicking-an-anchor-link
