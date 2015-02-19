@@ -1,6 +1,8 @@
 var y_home = $('#home').offset().top;
 var y_products = $('#products').offset().top;
 
+var link_home = $('#link-home');
+var link_products = $('#link-products');
 
 $(window).on('scroll', function() {
 
@@ -10,6 +12,16 @@ $(window).on('scroll', function() {
     $('.nav').addClass("past-main");
   else
     $('.nav').removeClass("past-main");
+
+  if(scroll < y_products)
+    link_home.addClass("nav-underline");
+  else
+    link_home.removeClass("nav-underline");
+
+  if(scroll >= y_products) 
+    link_products.addClass("nav-underline");
+  else
+    link_products.removeClass("nav-underline");
 });
 
 $('a[href*=#]').on('click', function(event) {

@@ -1,0 +1,26 @@
+
+article.product-window {
+
+  padding: 50px 100px;
+}
+
+.product-title {
+
+  text-align: left;
+  font-size: 3em;
+  font-family: $font-primary;
+}
+
+.product-description {
+
+  text-align: left;
+  font-size: 1.5em;
+  font-family: $font-secondary;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.text-right {
+
+  text-align: right;
+}
