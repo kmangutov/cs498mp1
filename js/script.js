@@ -29,3 +29,12 @@ $('a[href*=#]').on('click', function(event) {
   event.preventDefault();
   $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
 });
+
+
+
+$('.carousel').on('click', function(event) {
+
+  console.log("yes");
+  event.preventDefault();
+  $('.carousel-items').animate({y: '250px'}, 800).css('overflow', 'visible');
+});

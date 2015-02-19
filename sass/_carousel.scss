@@ -1,0 +1,30 @@
+
+$carousel-width: 300px;
+
+.carousel-item {
+
+  //float: left;
+  //position: relative;
+
+  width: $carousel-width;
+  height: $carousel-width;
+
+  padding: 0px;
+  margin: 0px;
+}
+
+.carousel {
+
+  //position: relative;
+  width: $carousel-width;
+  height: $carousel-width;
+  padding: 0px;
+  margin: 0px;
+
+  overflow: hidden;
+}
+
+.carousel-items {
+
+  //position: absolute;
+}
