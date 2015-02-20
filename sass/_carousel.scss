@@ -1,9 +1,9 @@
 
 $carousel-width: 300px;
 
-.carousel-item {
+.carousel-image {
 
-  //float: left;
+  float: left;
   //position: relative;
 
   width: $carousel-width;
@@ -15,16 +15,42 @@ $carousel-width: 300px;
 
 .carousel {
 
-  //position: relative;
+  position: relative;
   width: $carousel-width;
   height: $carousel-width;
   padding: 0px;
   margin: 0px;
+  border-radius: 1 px;
+  border-style: solid;
 
   overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
-.carousel-items {
-
+.carousel-content {
+  display: inline-block;
+  width: $carousel-width * 3;
+  position: absolute;
+  left: 0px;
   //position: absolute;
+}
+
+
+.carousel-left {
+
+  position: relative;
+  top: $carousel-width/2 - 25;
+  //vertical-align: center;
+  float: left;
+}
+
+.carousel-right {
+  @extend .carousel-left;
+  float: right;
+}
+
+.carousel-button {
+  padding: 30px 30px;
+  cursor: pointer;
+  opacity: 0.4;
 }
